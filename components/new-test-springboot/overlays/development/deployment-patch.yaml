@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: new-test-springboot
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/rorai-tenant/new-test-springboot/new-test-springboot@sha256:3f69693471447ac843227e87c788883eda2b2907c938dd01e55f5ceae62fb927
+        name: my-java-springboot
+        resources: {}
+status: {}
