@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: new-test-springboot
     spec:
       containers:
-      - image: java-springboot-image:latest
+      - image: quay.io/redhat-user-workloads-stage/rorai-tenant/new-test-springboot/new-test-springboot@sha256:3f69693471447ac843227e87c788883eda2b2907c938dd01e55f5ceae62fb927
         name: my-java-springboot
         ports:
         - containerPort: 8081
